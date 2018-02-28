@@ -1,19 +1,19 @@
 {
-    "name": "action-series-files",
+    "name": "action-series-assignments",
     "version": "1.0.0",
-    "description": "Action series for Files. Used in the D2L-to-Canvas Converstion tool.",
-    "main": "template-files.js",
+    "description": "Action series for assignments. Used in the D2L-to-Canvas Converstion tool.",
+    "main": "template-assignments.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/byuitechops/action-series-files.git"
+        "url": "git+https://github.com/byuitechops/action-series-assignments.git"
     },
     "author": "Zachary Williams",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/byuitechops/action-series-files/issues"
+        "url": "https://github.com/byuitechops/action-series-assignments/issues"
     },
-    "homepage": "https://github.com/byuitechops/action-series-files#readme"
+    "homepage": "https://github.com/byuitechops/action-series-assignments#readme"
 }
