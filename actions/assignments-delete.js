@@ -1,6 +1,4 @@
 module.exports = (course, assignment, callback) => {
-    course.message(`Analyzing ${assignment.name}`);
-    
     //if delete attribute is already set to true, do nothing
     if (assignment.techops.delete) {
         callback(null, course, assignment);
@@ -18,6 +16,7 @@ module.exports = (course, assignment, callback) => {
     //only called found is NOT undefined
     function modifyAssignment() {
         assignment.techops.delete = true;
+        
         course.log('Assignments - Deleted', {
             'Title': assignment.name,
             'ID': assignment.id
