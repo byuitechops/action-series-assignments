@@ -16,7 +16,7 @@ module.exports = (course, assignment, callback) => {
     //only called found is NOT undefined
     function modifyAssignment() {
         assignment.techops.delete = true;
-        
+
         course.log('Assignments - Deleted', {
             'Title': assignment.name,
             'ID': assignment.id
@@ -25,7 +25,7 @@ module.exports = (course, assignment, callback) => {
 
     //an assignment matching at least one element in the 
     //doomedAssignments has been found.
-    if (typeof found != "undefined") {
+    if (typeof found != 'undefined') {
         modifyAssignment();
     }
 
