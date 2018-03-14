@@ -17,7 +17,7 @@ module.exports = (course, assignment, callback) => {
     function modifyAssignment() {
         assignment.techops.delete = true;
 
-        course.log('Assignments - Deleted', {
+        assignment.techops.log('Assignments - Deleted', {
             'Title': assignment.name,
             'ID': assignment.id
         });
