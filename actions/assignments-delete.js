@@ -32,7 +32,7 @@ module.exports = (course, assignment, callback) => {
     }
 
     //an assignment matching at least one element in the doomedAssignments has been found.
-    if (found != undefined) {
+    if (found !== undefined) {
         action();
     } else {
         callback(null, course, assignment);
