@@ -59,7 +59,7 @@ function getItems(course, callback) {
 function buildPutObj(assignment) {
     return {
         'assignment': {
-            'name': assignment.name,
+            'title': assignment.name, // Not in documentation, but throws an error with 'name' instead
             'position': assignment.position,
             'turnitin_enabled': assignment.turnitin_enabled,
             'published': assignment.published,
