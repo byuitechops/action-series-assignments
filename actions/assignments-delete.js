@@ -15,11 +15,11 @@ module.exports = (course, assignment, callback) => {
     //modify assignment properties to prep it for termination
     //only called found is NOT undefined
     function action() {
-        var logCategory = 'Assignments - Deleted';
+        var logCategory = 'Deleted Assignments';
 
         /* If we're running a standards check and not doing any changes... */
         if (course.info.checkStandard === true) {
-            logCategory = 'Assigments - Deprecated';
+            logCategory = 'Deprecated Assigments';
         } else {
             assignment.techops.delete = true;
         }
