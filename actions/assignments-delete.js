@@ -1,6 +1,6 @@
 module.exports = (course, assignment, callback) => {
     //if delete attribute is already set to true, do nothing
-    if (assignment.techops.delete) {
+    if (assignment.techops.delete === true) {
         callback(null, course, assignment);
         return;
     }
