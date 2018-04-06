@@ -10,7 +10,7 @@ module.exports = (course, assignment, callback) => {
         /\[co~\d*\]/i //delete Course Outcomes assignments
     ];
 
-    var found = doomedAssignments.find((rgx) => rgx.test(assignment.name));
+    var found = doomedAssignments.find(rgx => rgx.test(assignment.name));
 
     //modify assignment properties to prep it for termination
     //only called found is NOT undefined
