@@ -1,6 +1,6 @@
 module.exports = (course, assignment, callback) => {
     //only add the platforms your grandchild should run in
-    var validPlatforms = ['online', 'pathway', 'campus'];  
+    var validPlatforms = ['online', 'pathway'];  
     var validPlatform = validPlatforms.includes(course.settings.platform);
 
     //if delete attribute is already set to true, do nothing
