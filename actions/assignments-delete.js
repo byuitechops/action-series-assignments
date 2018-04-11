@@ -1,3 +1,9 @@
+/******************************************************************************
+ * Assignments Delete
+ * Description: Create an array of assignment titles and set their delete 
+ * attribute on the TechOps class to true. If the delete attribute is set to 
+ * true, the assignment will be deleted in action-series-master main.js 
+ ******************************************************************************/
 module.exports = (course, assignment, callback) => {
     //only add the platforms your grandchild should run in
     var validPlatforms = ['online', 'pathway'];  
