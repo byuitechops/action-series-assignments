@@ -1,23 +1,25 @@
 {
-    "name": "action-series-assignments",
-    "version": "1.0.0",
-    "description": "Action series for assignments. Used in the D2L-to-Canvas Converstion tool.",
-    "main": "template-assignments.js",
-    "dependencies": {
-        "canvas-wrapper": "github:byuitechops/canvas-wrapper"
-    },
-    "devDependencies": {},
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/byuitechops/action-series-assignments.git"
-    },
-    "author": "Zachary Williams",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/byuitechops/action-series-assignments/issues"
-    },
-    "homepage": "https://github.com/byuitechops/action-series-assignments#readme"
+  "name": "action-series-assignments",
+  "version": "1.0.0",
+  "description": "Action series for assignments. Used in the D2L-to-Canvas Converstion tool.",
+  "main": "template-assignments.js",
+  "dependencies": {
+    "canvas-wrapper": "github:byuitechops/canvas-wrapper"
+  },
+  "devDependencies": {
+    "tap": "^11.1.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byuitechops/action-series-assignments.git"
+  },
+  "author": "Zachary Williams",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/byuitechops/action-series-assignments/issues"
+  },
+  "homepage": "https://github.com/byuitechops/action-series-assignments#readme"
 }
