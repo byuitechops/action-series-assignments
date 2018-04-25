@@ -20,16 +20,17 @@ module.exports = (course, callback) => {
                     return;
                 }
                 /* For each doomedAssignment, check if it still exists or not */
-                doomedAssignments.forEach(item => {
-                    found = assignments.find(assignment => item.test(assignment.name));
-                    if (found) {
-                        tapTest.fail(`The assignment '${item}' was marked to be deleted but still exists`);
-                    } else {
-                        tapTest.pass(`The assignment '${item}' was deleted`);
-                    }
-                });
+                if (assignments.length > 0) {
+                    assignments.forEach(assignment => {
+                        found = doomedAssignments.find(doomed => doomed.test(assignment.name));
+                        if (found) {
+                            tapTest.fail(`The assignment '${assignment.name}' was marked to be deleted but still exists`);
+                        } else {
+                            tapTest.pass(`The assignment '${assignment.name}' was deleted`);
+                        }
+                    });
+                }
                 deleteCallback(null);
-                return;
             });
         }
 
@@ -44,8 +45,7 @@ module.exports = (course, callback) => {
                 course.error(seriesErr);
             }
             tapTest.end();
+            callback(null, course);
         });
     });
-
-    callback(null, course);
 };
