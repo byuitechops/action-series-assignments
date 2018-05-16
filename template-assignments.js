@@ -21,19 +21,34 @@ class TechOps {
     }
 
     log(title, details) {
-        this.logs.push({ title, details });
+        this.logs.push({
+            title,
+            details
+        });
     }
 
     message(message) {
-        this.logs.push({ title: 'message', details: { message: message }});
+        this.logs.push({
+            title: 'message',
+            details: {
+                message: message
+            }
+        });
     }
 
     warning(warning) {
-        this.logs.push({ title: 'warning', details: { warning: warning }});
+        this.logs.push({
+            title: 'warning',
+            details: {
+                warning: warning
+            }
+        });
     }
 
     error(error) {
-        this.logs.push({ error: error });
+        this.logs.push({
+            error: error
+        });
     }
 }
 
@@ -63,6 +78,7 @@ function buildPutObj(assignment) {
             'position': assignment.position,
             'turnitin_enabled': assignment.turnitin_enabled,
             'published': assignment.published,
+            'description': assignment.description
         }
     };
 }
