@@ -122,6 +122,7 @@ function getID(item) {
 }
 
 module.exports = {
+    prefix: 'assignments',
     actions: actions,
     getItems: getItems,
     putItem: putItem,
