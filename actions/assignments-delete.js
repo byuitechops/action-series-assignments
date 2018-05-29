@@ -53,3 +53,7 @@ module.exports = (course, assignment, callback) => {
         callback(null, course, assignment);
     }
 };
+
+module.exports.details = {
+    title: 'assignments-delete'
+}
