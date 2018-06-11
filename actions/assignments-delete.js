@@ -6,12 +6,12 @@
  ******************************************************************************/
 module.exports = (course, assignment, callback) => {
     try {
-        //only add the platforms your grandchild should run in
-        var validPlatforms = ['online', 'pathway'];
-        var validPlatform = validPlatforms.includes(course.settings.platform);
+
+
+
 
         //if delete attribute is already set to true, do nothing
-        if (assignment.techops.delete === true || validPlatform !== true) {
+        if (assignment.techops.delete === true) {
             callback(null, course, assignment);
             return;
         }
